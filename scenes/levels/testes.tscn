@@ -5,4 +5,7 @@
 [node name="Testes" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_epn4a")]
-position = Vector2(703, 682)
+position = Vector2(220, 223)
+scale = Vector2(0.2, 0.2)
+speed = 240.0
+accel = 24.0
