@@ -1,13 +1,14 @@
 extends CharacterBody2D
 
-var player = GlobalVelocity.new()
+var player 	= GlobalVelocity.new()
+var buff 	= 1
 
 func _init():
-	player.set_buff(0)
-	player.set_speed()
-	player.set_accel()
+	player.set_speed(buff)
+	player.set_accel(buff)
 
 func _physics_process(_delta:float) -> void:
+	
 	var direction: Vector2 = Input.get_vector("left","right", "up", "down")
 
 	velocity.x = move_toward(velocity.x, player.get_speed() * direction.x, player.get_accel())
