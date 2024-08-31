@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhaf12uitcaea"]
+
+[ext_resource type="Script" path="res://scripts/enemy/enemy.gd" id="1_kfpf8"]
+[ext_resource type="Texture2D" uid="uid://c1d7hprfspngt" path="res://assets/texture/Human-HeavyCruiser.png" id="1_sk33c"]
+
+[node name="Dummy_Boss" type="CharacterBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_kfpf8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_sk33c")
+
+[node name="CollisionPolygon" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-84, -45, -56, -47, -57, -5, -38, -2, -34, -94, -12, -132, 12, -133, 31, -99, 43, -4, 57, -1, 57, -46, 84, -46, 84, 83, 57, 84, 58, 56, 39, 57, 39, 128, -37, 128, -33, 58, -55, 59, -56, 92, -84, 91)
+
+[node name="HurtBox" type="Area2D" parent="."]
+collision_layer = 64
+collision_mask = 8
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="HurtBox"]
+polygon = PackedVector2Array(-84, -45, -56, -47, -57, -5, -38, -2, -34, -94, -12, -132, 12, -133, 31, -99, 43, -4, 57, -1, 57, -46, 84, -46, 84, 83, 57, 84, 58, 56, 39, 57, 39, 128, -37, 128, -33, 58, -55, 59, -56, 92, -84, 91)
+
+[node name="Timer" type="Timer" parent="."]

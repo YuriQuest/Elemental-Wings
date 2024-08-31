@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b8ygeiq3rqfp5"]
+[gd_scene load_steps=3 format=3 uid="uid://b8ygeiq3rqfp5"]
 
-[ext_resource type="PackedScene" uid="uid://ddjfyqwrlsncm" path="res://scenes/characters/player.tscn" id="1_epn4a"]
+[ext_resource type="PackedScene" uid="uid://ddjfyqwrlsncm" path="res://scenes/characters/Player.tscn" id="1_epn4a"]
+[ext_resource type="PackedScene" uid="uid://dhaf12uitcaea" path="res://scenes/characters/Dummy_Boss.tscn" id="2_0lqjp"]
 
 [node name="Testes" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_epn4a")]
 position = Vector2(220, 223)
 scale = Vector2(0.2, 0.2)
+
+[node name="Dummy_Boss" parent="." instance=ExtResource("2_0lqjp")]
+position = Vector2(237, 72)

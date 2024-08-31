@@ -55,6 +55,20 @@ down={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_navigation/layer_1="world"
+2d_physics/layer_2="player"
+2d_physics/layer_3="item"
+2d_physics/layer_4="player_hitbox"
+2d_physics/layer_5="player_hurtbox"
+2d_physics/layer_6="enermy_hitbox"
+2d_physics/layer_7="enermy_hurtbox"
+2d_physics/layer_8="soft_collison"
+2d_physics/layer_9="enermy"
+2d_physics/layer_10="land_edge"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

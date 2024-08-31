@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpl0rc1xc8saj"]
+
+[ext_resource type="Texture2D" uid="uid://c1d7hprfspngt" path="res://assets/texture/Human-HeavyCruiser.png" id="1_aulo3"]
+
+[node name="Boss0" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_aulo3")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-84, -45, -56, -47, -57, -5, -38, -2, -34, -94, -12, -132, 12, -133, 31, -99, 43, -4, 57, -1, 57, -46, 84, -46, 84, 83, 57, 84, 58, 56, 39, 57, 39, 128, -37, 128, -33, 58, -55, 59, -56, 92, -84, 91)
